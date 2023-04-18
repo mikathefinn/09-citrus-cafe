@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f3cd32;
+  margin: 1rem;
+  font-family: "Roboto Slab", serif;
+}
+.container {
+}
+.logo {
+}
+nav {
+  margin-block-end: 2rem;
+}
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+ul > * {
+  flex: 1 100%;
+  background-color: #ddba2fee;
+  padding: 1.8rem;
+  text-align: center;
+  border: 1px solid #f3cd32;
+  border-radius: 0.8rem;
+  letter-spacing: 0.22rem;
+  text-shadow: 0px 1px 4px rgb(114, 114, 114);
+}
+nav > ul > li > a {
+  background-color: #ddba2fee;
+  color: black;
+  text-decoration: none;
+}
+
+/* COLORS #7C6C77 #AAA694 #D1D0A3 #EBF8B8 */
+.maincontent {
+}
+.vision {
+}
+.boxes {
+}
+.specials {
+}
+#tasty {
+  width: 30%;
+  height: auto;
+}
+.events {
+}
+.news {
+}
+footer {
+}
