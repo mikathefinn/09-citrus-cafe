@@ -8,7 +8,7 @@ body {
   margin: 1rem;
   font-family: "Roboto Slab", serif;
 }
-.container {
+.container {displ
 }
 .logo {
   margin-block-end: 1rem;
@@ -44,8 +44,12 @@ nav > ul > li > a {
 }
 .vision {
 }
+
 .intro {
   margin: 0 1.5rem 2rem 1.5rem;
+}
+.vision > figure {
+  display: none;
 }
 .boxes {
   display: flex;
@@ -67,6 +71,9 @@ nav > ul > li > a {
 
 .box-header > p {
   letter-spacing: 0.15rem;
+}
+.arrow {
+  font-weight: bold;
 }
 
 #tasty {
@@ -100,6 +107,14 @@ nav > ul > li > a {
   font-weight: bold;
 }
 
+.info :nth-child(3) {
+  font-weight: bold;
+  color: rgb(151, 131, 111);
+}
+
 footer {
   margin-block-start: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
 }
