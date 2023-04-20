@@ -11,6 +11,10 @@ body {
 .container {
 }
 .logo {
+  margin-block-end: 1rem;
+}
+#citruslogo {
+  width: 95%;
 }
 nav {
   margin-block-end: 2rem;
@@ -41,17 +45,51 @@ nav > ul > li > a {
 }
 .vision {
 }
+.intro {
+  margin: 0 1.5rem 2rem 1.5rem;
+}
 .boxes {
+  display: flex;
+  flex-direction: column;
 }
 .specials {
+  flex: 1 100%;
+  margin-block-end: 1rem;
+}
+.specials > p {
+  margin-block-end: 1rem;
+  padding: 1rem;
+  background-color: #dc8931;
+  border-radius: 0.4rem;
+  letter-spacing: 0.15rem;
 }
 #tasty {
-  width: 30%;
-  height: auto;
+  width: 100%;
 }
 .events {
+  flex: 1 100%;
+  margin-block-end: 1rem;
+}
+.events > p {
+  margin-block-end: 1rem;
+  padding: 1rem;
+  background-color: #dc8931;
+  border-radius: 0.4rem;
+  letter-spacing: 0.15rem;
+}
+#interior {
+  width: 100%;
 }
 .news {
+  flex: 1 100%;
+}
+.news > p {
+  margin-block-end: 1rem;
+  padding: 1rem;
+  background-color: #dc8931;
+  border-radius: 0.4rem;
+  letter-spacing: 0.15rem;
 }
 footer {
+  margin-block-start: 2rem;
 }
