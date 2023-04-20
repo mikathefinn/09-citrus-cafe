@@ -14,7 +14,7 @@ body {
   margin-block-end: 1rem;
 }
 #citruslogo {
-  width: 95%;
+  max-width: 95%;
 }
 nav {
   margin-block-end: 2rem;
@@ -24,7 +24,7 @@ nav > ul {
   flex-direction: column;
   flex-wrap: wrap;
 }
-ul > * {
+nav > ul > * {
   flex: 1 100%;
   background-color: #ddba2fee;
   padding: 1.8rem;
@@ -40,7 +40,6 @@ nav > ul > li > a {
   text-decoration: none;
 }
 
-/* COLORS #7C6C77 #AAA694 #D1D0A3 #EBF8B8 */
 .maincontent {
 }
 .vision {
@@ -56,13 +55,20 @@ nav > ul > li > a {
   flex: 1 100%;
   margin-block-end: 1rem;
 }
-.specials > p {
-  margin-block-end: 1rem;
+/* HEADER AND ARROW FLEXED TO ROW, SPACE BETWEEN */
+.box-header {
+  display: flex;
+  justify-content: space-between;
   padding: 1rem;
   background-color: #dc8931;
   border-radius: 0.4rem;
+  margin-block-end: 1rem;
+}
+
+.box-header > p {
   letter-spacing: 0.15rem;
 }
+
 #tasty {
   width: 100%;
 }
@@ -70,19 +76,14 @@ nav > ul > li > a {
   flex: 1 100%;
   margin-block-end: 1rem;
 }
-.events > p {
-  margin-block-end: 1rem;
-  padding: 1rem;
-  background-color: #dc8931;
-  border-radius: 0.4rem;
-  letter-spacing: 0.15rem;
-}
+
 #interior {
-  width: 100%;
+  max-width: 100%;
 }
 .news {
   flex: 1 100%;
 }
+
 .news > p {
   margin-block-end: 1rem;
   padding: 1rem;
@@ -90,6 +91,15 @@ nav > ul > li > a {
   border-radius: 0.4rem;
   letter-spacing: 0.15rem;
 }
+/* FLEX THE NEWSLIST IN A ROW */
+.newslist {
+  display: flex;
+  gap: 1rem;
+}
+.newslist ul:first-child {
+  font-weight: bold;
+}
+
 footer {
   margin-block-start: 2rem;
 }
