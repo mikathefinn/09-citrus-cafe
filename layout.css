@@ -122,8 +122,12 @@ footer {
   .vision {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin-block-end: 1rem;
+    background-image: url(/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   .vision p {
@@ -135,6 +139,7 @@ footer {
   }
   #chef {
     max-width: 100%;
+    float: right;
   }
 
   .boxes {
@@ -143,10 +148,26 @@ footer {
   }
   .specials,
   .events {
-    flex-basis: 50%;
+    flex-basis: 0;
+  }
+  .specials {
+    padding-inline-end: 0.5rem;
+  }
+  .events {
+    padding-inline-start: 0.5rem;
+  }
+  .news {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .events {
+    padding-inline-end: 0.5rem;
   }
 
   .news {
-    flex-basis: 100%;
+    flex-basis: 0;
+    padding-inline-start: 0.5rem;
   }
 }
