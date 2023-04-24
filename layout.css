@@ -8,8 +8,7 @@ body {
   margin: 1rem;
   font-family: "Roboto Slab", serif;
 }
-.container {displ
-}
+
 .logo {
   margin-block-end: 1rem;
 }
@@ -19,12 +18,11 @@ body {
 nav {
   margin-block-end: 2rem;
 }
-nav > ul {
+.links {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
-nav > ul > * {
+.links > * {
   flex: 1 100%;
   background-color: #ddba2fee;
   padding: 1.8rem;
@@ -34,22 +32,19 @@ nav > ul > * {
   letter-spacing: 0.22rem;
   text-shadow: 0px 1px 4px rgb(114, 114, 114);
 }
-nav > ul > li > a {
+.links > li > a {
   background-color: #ddba2fee;
   color: black;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 
-.maincontent {
-}
-.vision {
-}
-
-.intro {
-  margin: 0 1.5rem 2rem 1.5rem;
-}
 .vision > figure {
   display: none;
+}
+
+.vision > p {
+  margin: 0 1.5rem 2rem 1.5rem;
 }
 .boxes {
   display: flex;
@@ -117,4 +112,41 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
+}
+
+@media screen and (min-width: 426px) {
+  .links {
+    flex-direction: row;
+  }
+
+  .vision {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-block-end: 1rem;
+  }
+
+  .vision p {
+    flex-basis: 80%;
+  }
+  .vision figure {
+    display: block;
+    flex-basis: 50%;
+  }
+  #chef {
+    max-width: 100%;
+  }
+
+  .boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .specials,
+  .events {
+    flex-basis: 50%;
+  }
+
+  .news {
+    flex-basis: 100%;
+  }
 }
